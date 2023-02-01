@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form validation</title>
+</head>
+
+<body>
+  <form method="" action="" id="registrationForm">
+    <table>
+      <tr>
+        <th>First Name</th>
+        <td>
+          <input type="text" id="firstName"/>
+          <span id="firstNameError"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>Last Name</th>
+        <td>
+          <input type="text" id="lastName"/>
+          <span id="lastNameError"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td>
+          <input type="email" id="email">
+          <span id="emailError"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>Password</th>
+        <td>
+          <input type="password" id="password">
+          <label for=""><input type="checkbox" id="showHide"> Show/ Hide</label>
+          <span id="passwordError"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>Confirm Password</th>
+        <td>
+          <input type="password" id="confirmPassword" />
+          <span id="confirmPasswordError"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>Phone Number</th>
+        <td>
+          <input type="number" id="phoneNumber" />
+          <span id="phoneNumberError"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>District Name</th>
+        <td>
+          <select name="" id="districtName">
+            <option value="" disabled selected><------Select a district---------></option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Borisal">Borisal</option>
+            <option value="Chandpur">Chandpur</option>
+          </select>
+          <span id="districtNameError"></span>
+        </td>
+
+      </tr>
+      <tr>
+        <th>Gender Info</th>
+        <td>
+          <label for=""><input type="radio" name="gender" value="male" />Male</label>
+          <label for=""><input type="radio" name="gender" value="female" />Female</label>
+          <label for=""><input type="radio" name="gender" value="other" />Other</label>
+          <span id="genderError"></span>
+        </td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><input type="submit" id="btn" value="Submit" /></td>
+      </tr>
+    </table>
+  </form>
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
